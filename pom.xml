@@ -211,6 +211,19 @@
                 </plugin>
             </plugins>
         </pluginManagement>
+        <filters>
+            <filter>${basedir}/src/main/resources/env/config.${env}.properties</filter>
+        </filters>
+        <resources>
+            <resource>
+                <directory>${basedir}/src/main/resources</directory>
+                <filtering>true</filtering>
+                <includes>
+                    <include>*.properties</include>
+                </includes>
+            </resource>
+        </resources>
+
     </build>
 
     <profiles>
